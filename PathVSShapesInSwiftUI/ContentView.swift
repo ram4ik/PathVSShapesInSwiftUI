@@ -21,12 +21,11 @@ struct Triangle: Shape {
     }
 }
 
-
-
-
 struct ContentView: View {
     var body: some View {
-        Text("Hello World")
+        Triangle()
+            .fill(Color.red)
+            .frame(width: 300, height: 300)
     }
 }
 
